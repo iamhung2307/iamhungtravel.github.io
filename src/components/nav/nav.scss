@@ -1,0 +1,41 @@
+
+.navbar{
+    
+    background-color: rgba(246, 246, 246, 0);
+    width:100%;
+    position: fixed !important;
+    top:0;
+    z-index: 10;
+    .container{
+        
+        .collapse{
+            margin-left: 15%;
+            
+        }
+        .nav-link{
+            color:white;
+            font-weight: 700;
+        }
+        .navbar-right{
+            display: flex;
+            margin-left: 25%;
+            .fa-solid{
+                cursor: pointer;
+                margin: auto;
+            }
+            .btn-login{
+                margin:auto 10px;
+                padding:5px 10px;
+                border-radius: 7px;
+                font-weight: 500;
+                outline: none;
+                border: 0;
+                background-color: white;
+            }
+        }
+    }
+    
+}
+
+
+

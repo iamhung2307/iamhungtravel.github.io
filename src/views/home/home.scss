@@ -1,0 +1,189 @@
+.home{
+    $boxShadow: 1px 2px 5px 0px rgb(107, 105, 105);
+    .sliderTop{
+        height:60vh;
+        .slick-arrow{
+            display: none !important;
+        }
+        .slideTopChild{
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width:100vw !important;
+            height:60vh;
+        }
+        .slideOne{
+            background-image: url(../../assets/images/index/bg01.jpg);
+        }
+        .slideTwo{
+            background-image: url(../../assets/images/index/bg02.jpg);
+        }
+        .slideThree{
+            background-image: url(../../assets/images/index/bg03.png);
+        }
+    } 
+    .main{
+        width:65%;
+        margin: auto;
+        .travelFavourite{
+
+            .travelFavouriteChild{
+                
+                .sliderTravel{
+                    .slick-slide {
+                        padding:0 2px;
+                    }
+                    .slick-arrow{
+                        background-color: rgb(36, 35, 35);
+                        margin: auto;
+                        height:80px;
+                        border-radius: 10px;
+                    }
+                    .slideChild{
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        height:30vh;
+                        border-radius: 10px;
+                    }
+                    .slide1{
+                        background-image: url(../../assets/images/index/bg01.jpg);
+                    }
+                    .slide2{
+                        background-image: url(../../assets/images/index/bg02.jpg);
+                    }
+                    .slide3{
+                        background-image: url(../../assets/images/index/bg03.png);
+                    }
+                    .slide4{
+                        background-image: url(../../assets/images/index/bg01.jpg);
+                    }
+                    .slide5{
+                        background-image: url(../../assets/images/index/bg02.jpg);
+                    }
+                    .slide6{
+                        background-image: url(../../assets/images/index/bg03.png);
+                    }
+                    .slide7{
+                        background-image: url(../../assets/images/index/bg01.jpg);
+                    }
+                    .slide8{
+                        background-image: url(../../assets/images/index/bg02.jpg);
+                    }
+                    .slide9{
+                        background-image: url(../../assets/images/index/bg03.png);
+                    }
+                    .slide10{
+                        background-image: url(../../assets/images/index/bg01.jpg);
+                    }
+                    .slide11{
+                        background-image: url(../../assets/images/index/bg02.jpg);
+                    }
+                    .slide12{
+                        background-image: url(../../assets/images/index/bg03.png);
+                    }
+                }
+            }
+        }
+        .discount{
+            
+            .slick-slide {
+                padding:0 2px;
+            }
+            .slick-arrow{
+                display: none;
+            }
+            .slideChild{
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                height:20vh;
+                border-radius: 10px;
+
+            }
+            
+            .slide1{
+                background-image: url(../../assets/images/home/discount/001.webp);
+            }
+            .slide2{
+                background-image: url(../../assets/images/home/discount/002.webp);
+            }
+            .slide3{
+                background-image: url(../../assets/images/home/discount/003.webp);
+            }
+            .slide4{
+                background-image: url(../../assets/images/home/discount/004.webp);
+            }
+            .slide5{
+                background-image: url(../../assets/images/home/discount/005.webp);
+            }
+            .slide6{
+                background-image: url(../../assets/images/home/discount/006.webp);
+            }
+            .slide7{
+                background-image: url(../../assets/images/home/discount/007.webp);
+            }
+            .slide8{
+                background-image: url(../../assets/images/home/discount/008.webp);
+            }
+            .slide9{
+                background-image: url(../../assets/images/home/discount/009.webp);
+            }
+            .slide10{
+                background-image: url(../../assets/images/home/discount/010.webp);
+            }
+            .slide11{
+                background-image: url(../../assets/images/home/discount/011.webp);
+            }
+            
+        }
+        .Ecosystem{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            background-position: center;
+            // background-size: cover;
+            background-repeat: no-repeat;
+            
+            .EcosystemChild{
+                position: relative;
+                height:160px;
+                margin:0 5px;
+                border-radius: 10px;
+                box-shadow: $boxShadow;
+                color:rgb(220, 217, 217);
+                font-weight: 600;
+                font-size: 20px;
+                text-align: center;
+                transform: translateY(10%) translateZ(0);
+                transition: transform 0.5s ease-in-out;
+	            
+                overflow: hidden;
+                &:hover{
+                    transform: scale(1.2);
+                    // color:white;
+                    z-index: 10;
+                }
+            }
+            p{
+                position: absolute;
+                top:30px;
+                left: 15px;
+            }
+            .Ecosystem1{
+                background-image: url(../../assets/images/home/discount/001.webp);
+            }
+            .Ecosystem2{
+                background-image: url(../../assets/images/home/discount/001.webp);
+            }
+            .Ecosystem3{
+                background-image: url(../../assets/images/home/discount/001.webp);
+            }
+            .Ecosystem4{
+                background-image: url(../../assets/images/home/discount/001.webp);
+            }
+            .Ecosystem5{
+                background-image: url(../../assets/images/home/discount/001.webp);
+            }
+        }
+    }
+} 
