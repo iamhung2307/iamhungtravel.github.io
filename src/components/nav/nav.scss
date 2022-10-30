@@ -1,11 +1,13 @@
 
 .navbar{
-    
     background-color: rgba(246, 246, 246, 0);
     width:100%;
     position: fixed !important;
     top:0;
     z-index: 10;
+    .logoBlack{
+        display: none; 
+    }
     .container{
         
         .collapse{
@@ -15,6 +17,9 @@
         .nav-link{
             color:white;
             font-weight: 700;
+            &:hover{
+                color:black;
+            }
         }
         .navbar-right{
             display: flex;
@@ -34,7 +39,26 @@
             }
         }
     }
-    
+    &.active{
+        box-shadow: 1px 1px 1px 1px rgb(210, 205, 205);
+        img{
+            width:90px;
+        }
+        .logo{
+            display: none;
+        }
+        .logoBlack{
+            display: block; 
+        }
+        background-color: #fff;
+        .nav-link{
+            color:black;
+        }
+        .btn-login{
+            background-color: #E8952F !important;
+            color:white
+        }
+    }
 }
 
 

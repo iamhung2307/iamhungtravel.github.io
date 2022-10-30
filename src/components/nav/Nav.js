@@ -5,7 +5,7 @@ import './nav.scss'
 
 // img
 import imgLogo from '../../assets/images/index/logo.svg'
-
+import logoBlack from '../../assets/images/index/logo.png'
 export default function Nav() {
   // let [scroll,setscroll] = useState(false)
   
@@ -14,9 +14,9 @@ export default function Nav() {
       const nav = document.querySelector('.navbar')
       const formBooking = document.querySelector('.header')
       if(window.scrollY > 50){
-        nav.style.background = '#000'
+        nav.classList.add('active')
       }else{
-        nav.style.background = 'none'
+        nav.classList.remove('active')
       }
       if(window.scrollY>170){
         formBooking.style.display = 'none'
@@ -34,7 +34,8 @@ export default function Nav() {
     <nav class="navbar navbar-expand-sm">
       <div class="container">
         <Link class="navbar-brand" to="/">
-          <img src={imgLogo}></img>
+          <img className='logo' src={imgLogo}></img>
+          <img className='logoBlack' src={logoBlack}></img>
         </Link>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>

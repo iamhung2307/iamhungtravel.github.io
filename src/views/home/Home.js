@@ -1,14 +1,19 @@
 import React from 'react'
 import Slider from "react-slick";
-
+import { Link } from 'react-router-dom';
 import ParticlesStar from '../../components/ParticlesStar';
 import Nav from '../../components/nav/Nav'
 import Formbooking from '../../components/form search booking/Formbooking'
-import SliderTravel from '../../components/slider/SliderTravel';
+
 // SCSS
 import './home.scss'
 import FormBooking from '../../components/form search booking/Formbooking';
 
+// images
+import img1a from '../../assets/images/home/populations/1a.webp'
+import img1b from '../../assets/images/home/populations/1b.webp'
+import img2 from '../../assets/images/home/populations/2a.jpeg'
+import img3 from '../../assets/images/home/populations/3a.webp'
 
 function Home() {
     let settings = {
@@ -18,7 +23,9 @@ function Home() {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay:true,
-        autoplaySpeed:5000
+        autoplaySpeed:5000,
+        // fade: true,
+	    // fadeSpeed: 1000
     }
     let sliderTravel = {
         ...settings,
@@ -66,9 +73,7 @@ function Home() {
                         <div className='slideChild slide10'></div>
                         <div className='slideChild slide11'></div>
                         <div className='slideChild slide12'></div>
-
                     </Slider>
-        
                     </div>
                     </div>
                 </div>
@@ -111,6 +116,50 @@ function Home() {
                 <div className='populations text-center'>
                     <h2>Siêu Quần Thể Vinpearl</h2>
                     <p>Siêu quẩn thể nghỉ dưỡng, vui chơi giải trí, mua sắm và ẩm thực tại các điểm đến hàng đầu Việt Nam</p>
+                    <div className='content'>
+                        <section>
+                            <div className='img'>
+                                <img src={img1a}></img>
+                            </div>
+                            <div className='text'>
+                                <h1>Phú Quốc</h1>
+                                <p>Hưởng trọn vẻ đẹp của thiên nhiên hoang sơ trải rộng trên diện tích hơn 1.000 ha phía Bắc đảo ngọc, Phú Quốc United Center mở ra cánh cửa đến với Vũ trụ nghỉ dưỡng, vui chơi giải trí bất tận.</p>
+                                <Link to='#'>Khám phá ngay <i class="fa-solid fa-arrow-right"></i></Link>
+                            </div>
+                            <div className='img'>
+                                <img src={img1b}></img>
+                            </div>
+                        </section>
+                        <section>
+                            <div className='text'>
+                                <h1>Nha Trang</h1>
+                                <p>Vinpearl Nha Trang - Quần thể du lịch nghỉ dưỡng, vui chơi và khám phá biển hàng đầu Đông Nam Á, top 10 vịnh biển đẹp nhất hành tinh tạo nên vạn trải nghiệm nghỉ dưỡng đỉnh cao.</p>
+                                <Link to='#'>Khám phá ngay <i class="fa-solid fa-arrow-right"></i></Link>
+                            </div>
+                            <div className='img'>
+                                <img src={img2}></img>
+                            </div>
+                        </section>
+                        <section>
+                            <div className='img'>
+                                <img src={img3}></img>
+                            </div>
+                            <div className='text'>
+                                <h1>Nam Hội An</h1>
+                                <p>Là tâm điểm của con đường di sản miền Trung, Quần thể Vinpearl Nam Hội An làm nên một thiên đường nghỉ dưỡng – giải trí đa sắc văn hóa, muôn màu trải nghiệm.</p>
+                                <Link to='#'>Khám phá ngay <i class="fa-solid fa-arrow-right"></i></Link>
+                            </div>
+                            
+                        </section>
+                    </div>
+                    {/* <div>
+                        <div>
+                            <img></img>
+                        </div>
+                        <div>
+                            <img></img>
+                        </div>
+                    </div> */}
                 </div>
             </div>
         </div>

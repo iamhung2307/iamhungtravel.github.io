@@ -1,5 +1,20 @@
+$color : #E8952F;
+
 .home{
     $boxShadow: 1px 2px 5px 0px rgb(107, 105, 105);
+    
+    .slick-dots {
+            button {
+                width: 2px;
+                height: 2px;
+                border-radius: 100%;
+                background-color: rgb(109, 103, 103);
+                text-indent: -9999px;
+            }
+            li.slick-active button {
+                background-color: $color;
+            }
+    }
     .sliderTop{
         height:60vh;
         .slick-arrow{
@@ -33,11 +48,19 @@
                     .slick-slide {
                         padding:0 2px;
                     }
-                    .slick-arrow{
-                        background-color: rgb(36, 35, 35);
-                        margin: auto;
-                        height:80px;
-                        border-radius: 10px;
+                    .slick-slider {
+                        .slick-arrow {
+                            width: 50px;
+                            height: 50px;
+                            z-index: 1;
+                            border-radius: 100%;
+                            background-color: $color;
+                            // text-indent: -9999px;
+                            color: #E8952F;
+                        }
+                        li.slick-active button {
+                            background-color: $color;
+                        }
                     }
                     .slideChild{
                         background-position: center;
@@ -150,7 +173,7 @@
                 margin:0 5px;
                 border-radius: 10px;
                 box-shadow: $boxShadow;
-                color:rgb(220, 217, 217);
+                color:black;
                 font-weight: 600;
                 font-size: 20px;
                 text-align: center;
@@ -183,6 +206,68 @@
             }
             .Ecosystem5{
                 background-image: url(../../assets/images/home/discount/001.webp);
+            }
+        }
+        .populations{
+            
+            .content{
+                section{
+                    color:white;
+                    a{
+                        color:white;
+                    }
+                    .img{
+                        width:800px;
+                        height:400px;
+                        overflow: hidden;
+                        img{
+                            width:100%;
+                            transform: scale(1.1);
+                            transition: .5s ease-in-out;
+                            &:hover{
+                                transform: scale(1);
+                            }
+                        }
+                    }
+                    display: flex;
+                    flex-wrap: wrap;
+                    .text{
+                        font-family: 'Montserrat', sans-serif;
+                        h1{
+                            font-family: 'Kolker Brush', cursive;
+                            font-size: 65px;
+                        }
+                        background-color: $color;
+                        width:400px;
+                        padding:65px 60px 0 50px;
+                        text-align: left;
+                        transition:background-color 1s ;
+                        &:hover{
+                            background-color: #107760;
+                        }
+                    }
+                }
+            }
+            
+            section:nth-child(1){
+                .img{
+                    width:400px;
+                    img{
+                        width:450px;
+                        height:400px;
+                    }
+                }
+                .text:hover{
+                    background-color: #fe4b4b;
+                }
+            }
+            section:nth-child(2){
+                .text{
+                    background-color: #07266d;
+                    &:hover{
+                        background-color: #07b0ba;
+                    }
+                }
             }
         }
     }
