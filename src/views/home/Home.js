@@ -14,6 +14,12 @@ import img1a from '../../assets/images/home/populations/1a.webp'
 import img1b from '../../assets/images/home/populations/1b.webp'
 import img2 from '../../assets/images/home/populations/2a.jpeg'
 import img3 from '../../assets/images/home/populations/3a.webp'
+// images Ecosystem
+import imgE1 from '../../assets/images/home/ecosystem/nghiduong.webp'
+import imgE2 from '../../assets/images/home/ecosystem/vuichoi.jpg'
+import imgE3 from '../../assets/images/home/ecosystem/golf.webp'
+import imgE4 from '../../assets/images/home/ecosystem/hoihop.jpg'
+import imgE5 from '../../assets/images/home/ecosystem/amthuc.jpg'
 
 function Home() {
     let settings = {
@@ -61,18 +67,49 @@ function Home() {
                     <div className='travelFavouriteChild'>
                     <div className='sliderTravel' >
                     <Slider {...sliderTravel}>
-                        <div className='slideChild slide1'></div>
-                        <div className='slideChild slide2'></div>
-                        <div className='slideChild slide3'></div>
-                        <div className='slideChild slide4'></div>
-                        <div className='slideChild slide5'></div>
-                        <div className='slideChild slide6'></div>
-                        <div className='slideChild slide7'></div>
-                        <div className='slideChild slide8'></div>
-                        <div className='slideChild slide9'></div>
-                        <div className='slideChild slide10'></div>
-                        <div className='slideChild slide11'></div>
-                        <div className='slideChild slide12'></div>
+                        <div className='text'>
+                            <div className='slideChild slide1'></div>
+                            <p>PHÚ QUỐC</p>
+                            </div>
+                        <div className='text'>
+                            <div className='slideChild slide2'></div>
+                            <p>BÀ RỊA - VŨNG TÀU</p>
+                            </div>
+                        <div className='text'>
+                            <div className='slideChild slide3'></div>
+                            <p>PHAN THIẾT</p>
+                            </div>
+                        <div className='text'>
+                            <div className='slideChild slide4'></div>
+                            <p>ĐÀ LẠT</p>
+                            </div>
+                        <div className='text'>
+                            <div className='slideChild slide5'></div>
+                            <p>ĐÀ LẠT</p>
+                            </div>
+                        <div className='text'>
+                            <div className='slideChild slide6'></div>
+                            <p>ĐÀ NẴNG</p>
+                            </div>
+                        <div className='text'>
+                            <div className='slideChild slide7'></div>
+                            <p>NHA TRANG</p>
+                            </div>
+                        <div className='text'>
+                            <div className='slideChild slide8'></div>
+                            <p>SAPA</p>
+                            </div>
+                        <div className='text'>
+                            <div className='slideChild slide9'></div>
+                            <p>TRÀNG AN</p>
+                            </div>
+                        <div className='text'>
+                            <div className='slideChild slide10'></div>
+                            <p>VỊNH HẠ LONG</p>
+                            </div>
+                        
+                        {/* <div className='slideChild slide11'></div>
+                        <div className='slideChild slide12'></div> */}
                     </Slider>
                     </div>
                     </div>
@@ -96,22 +133,28 @@ function Home() {
                 <div className='mt-5 mb-5'>
                     <h2>Trải nghiệm hệ sinh thái Vinpearl</h2>
                     <div className='Ecosystem mt-3'>
-                        <div className='EcosystemChild Ecosystem1'>
+                        <div className='EcosystemChild'>
+                            <div className='img'><img src={imgE1}></img></div>
                             <p>Nghỉ dưỡng</p>
                         </div>
-                        <div className='EcosystemChild Ecosystem2'>
+                        <div className='EcosystemChild'>
+                            <div className='img'><img src={imgE2}></img></div>
                             <p>Vui chơi giải trí</p>
                         </div>
-                        <div className='EcosystemChild Ecosystem3'>
+                        <div className='EcosystemChild'>
+                            <div className='img'><img src={imgE3}></img></div>
                             <p>Vinpearl Golf</p>
                         </div>
-                        <div className='EcosystemChild Ecosystem4'>
+                        <div className='EcosystemChild'>
+                            <div className='img'><img src={imgE4}></img></div>
                             <p>Hội họp và sự kiện</p>
                         </div>
-                        <div className='EcosystemChild Ecosystem5'>
+                        <div className='EcosystemChild'>
+                            <div className='img'><img src={imgE5}></img></div>
                             <p>Ẩm thực</p>
                         </div>
                     </div>
+                    
                 </div>
                 <div className='populations text-center'>
                     <h2>Siêu Quần Thể Vinpearl</h2>
@@ -152,14 +195,34 @@ function Home() {
                             
                         </section>
                     </div>
-                    {/* <div>
-                        <div>
-                            <img></img>
-                        </div>
-                        <div>
-                            <img></img>
-                        </div>
-                    </div> */}
+                </div>
+                <div className='travelGuide'>
+                    <div className='text-top mt-5' >
+                        <h2>Cẩm nang du lịch</h2>
+                        <Link to="#">Xem tất cả <i class="fa-solid fa-angles-right"></i></Link>
+                    </div>
+                    <p>Cùng Vinpearl khám phá trọn vẹn vẻ đẹp Việt Nam qua trọn bộ kinh nghiệm du lịch, nghỉ dưỡng, vui chơi cực hấp dẫn!</p>
+                    <Slider {...discount}>
+                        <section>
+                            <div className='img'><div className='slideChild slide1'></div></div>
+                            <p>Trọn bộ kinh nghiệm, điểm đến & combo du lịch Phú Quốc từ A - Z 2022</p>
+                        </section>
+                        <section>
+                            <div className='img'><div className='slideChild slide2'></div></div>
+
+                            <p>Kinh nghiệm du lịch Nha Trang tự túc SIÊU TIẾT KIỆM - BAO VUI 2022</p>
+                        </section>
+                        <section>
+                            <div className='img'><div className='slideChild slide3'></div></div>
+
+                            <p>Kinh nghiệm du lịch Hội An TRỌN BỘ thời gian, đi lại, ăn ở, vui chơi</p>
+                        </section>
+                        <section>
+                            <div className='img'><div className='slideChild slide4'></div></div>
+
+                            <p>Du lịch Đà Nẵng vui quên lối về trọn bộ cẩm nang A-Z</p>
+                        </section>
+                    </Slider>
                 </div>
             </div>
         </div>
