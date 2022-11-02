@@ -20,6 +20,13 @@ import imgE2 from '../../assets/images/home/ecosystem/vuichoi.jpg'
 import imgE3 from '../../assets/images/home/ecosystem/golf.webp'
 import imgE4 from '../../assets/images/home/ecosystem/hoihop.jpg'
 import imgE5 from '../../assets/images/home/ecosystem/amthuc.jpg'
+// Awards
+import awards1 from '../../assets/images/Awards/005.webp'
+import awards2 from '../../assets/images/Awards/001.webp'
+import awards3 from '../../assets/images/Awards/002.webp'
+import awards4 from '../../assets/images/Awards/003.webp'
+import awards5 from '../../assets/images/Awards/004.webp'
+
 
 function Home() {
     let settings = {
@@ -224,6 +231,28 @@ function Home() {
                         </section>
                     </Slider>
                 </div>
+                <div className='QRcode mt-5'>
+                    <div className='content-text'>
+                        <h3>Tải ứng dụng <span>MyVinpearl</span></h3>
+                        <p><i class="fa-solid fa-circle-check mt-3"></i> Ưu đãi hấp dẫn dành riêng cho ứng dụng</p>
+                        <p><i class="fa-solid fa-circle-check"></i> Checkin trực tuyến nhanh chóng, thuận tiện</p>
+                        <p><i class="fa-solid fa-circle-check"></i> Trợ lý ảo xuyên suốt toàn bộ hành trình</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div className='awards'>
+                <div className='content'>
+                    <h3>Giải thưởng & thành tựu</h3>
+                    <div>
+                        <img src={awards1}></img>
+                        <img src={awards2}></img>
+                        <img src={awards3}></img>
+                        <img src={awards4}></img>
+                        <img src={awards5}></img>
+                    </div>
+                </div> 
+                
             </div>
         </div>
     </>

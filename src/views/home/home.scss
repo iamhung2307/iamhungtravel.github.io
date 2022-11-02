@@ -325,5 +325,51 @@ $color : #E8952F;
                 }
             }
         }
+        .QRcode{
+            position: relative;
+            background-repeat: no-repeat;
+            height:500px;
+            background-size: 100%;
+            background-image: url(../../assets/images/home/QRcode.png);
+            .content-text{
+                position: absolute;
+                top:25%;
+                left:35%;
+                font-size: 18px;
+                color:white;
+                span{
+                    color: #E8952F;
+                }
+            }
+        }
+        
+    }
+    .awards{
+        background-color: #f8f8f8;
+        .content{
+            width:60%;
+
+            display: flex;
+            margin:20px auto;
+            h3{
+                width:40%;
+                margin: auto;
+            }
+            div{
+                width:60%;
+                display: flex;
+                justify-content: space-around;
+                img{
+                    width:17%;
+                }
+                img:nth-child(2){
+                    width:22%;
+                }
+                img:nth-child(3){
+                    width:30%;
+                }
+            }
+            
+        }
     }
 } 
