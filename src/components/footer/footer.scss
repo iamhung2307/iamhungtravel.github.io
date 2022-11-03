@@ -8,6 +8,7 @@
         color:white;
         display: block;
         line-height: 33px;
+        
         &:hover{
             color:white;
         }
@@ -37,8 +38,34 @@
         width:60%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        h5{
+            position: relative;
+            margin-bottom: 20px;
+            &::before{
+                content: "";
+                position: absolute;
+                width: 100%;
+                max-width: 200px;
+                border-bottom: 2px solid rgb(255 255 255/20%);
+                bottom: -16px;
+                left: 0;
+            }
+            &::after{
+            content: "";
+            position: absolute;
+            width: 60px;
+            border-bottom: 2px solid #f39f2d;
+            bottom: -16px;
+            left: 0;
+            }
+        }
         div:not(:first-child){
             margin-top: 65px;
+        }
+        .line{
+            width:80%;
+            height:5px;
+            background-color: gray;
         }
         .contentTop1{
             display: block;
@@ -62,6 +89,7 @@
                 }
             }
             a{
+                
                 color:$color ;
                 line-height: 0px;
             }

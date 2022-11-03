@@ -31,6 +31,7 @@ function Footer() {
             </div>
             <div className='contentTop2'>
                 <h5>GIỚI THIỆU</h5>
+                <span className='line'></span>
                 <Link to='#'>Về chúng tôi</Link>
                 <Link to='#'>Thành tựu</Link>
                 <Link to='#'>Liên hệ</Link>
@@ -40,14 +41,16 @@ function Footer() {
             </div>
             <div className='contentTop3 '>
                 <h5>TIN TỨC & SỰ KIỆN</h5>
+                <span className='line'></span>
                 <Link to='#'>Tin công ty</Link>
                 <Link to='#'>Cẩm nang du lịch</Link>
                 <br></br>
                 <Link to='#'><h5>THƯ VIỆN ẢNH</h5></Link>
-                
+                <span className='line'></span>
             </div>
             <div className='contentTop4'>
                 <h5>ĐIỀU KHOẢN & QUY ĐỊNH</h5>
+                <span className='line'></span>
                 <Link to='#'>Điều khoản chung</Link>
                 <Link to='#'>Quy định chung</Link>
                 <Link to='#'>Quy định về thanh toán</Link>
