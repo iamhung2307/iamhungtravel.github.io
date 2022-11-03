@@ -6,5 +6,22 @@ html, body {
         text-decoration: none;
         color:black
     }
+    button{
+        border: 0;
+        outline: none;
+    }
+    input{
+        outline: none;
+    }
+    .flex{
+        display: flex;
+    }
+    .mga{
+        margin: auto;
+    }
+    .cl{
+        color:#E8952F;
+    }
+    
     // font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }

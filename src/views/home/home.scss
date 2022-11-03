@@ -1,4 +1,4 @@
-$color : #E8952F;
+@import '../../styles/variable.scss';
 
 .home{
     $boxShadow: 1px 2px 5px 0px rgb(107, 105, 105);
@@ -60,7 +60,7 @@ $color : #E8952F;
                             border-radius: 100%;
                             background-color: $color;
                             // text-indent: -9999px;
-                            color: #E8952F;
+                            color: $color;
                         }
                         li.slick-active button {
                             background-color: $color;
@@ -328,17 +328,17 @@ $color : #E8952F;
         .QRcode{
             position: relative;
             background-repeat: no-repeat;
-            height:500px;
+            height:450px;
             background-size: 100%;
             background-image: url(../../assets/images/home/QRcode.png);
             .content-text{
                 position: absolute;
-                top:25%;
+                top:30%;
                 left:35%;
                 font-size: 18px;
                 color:white;
                 span{
-                    color: #E8952F;
+                    color: $color;
                 }
             }
         }
@@ -348,9 +348,8 @@ $color : #E8952F;
         background-color: #f8f8f8;
         .content{
             width:60%;
-
             display: flex;
-            margin:20px auto;
+            margin:10px auto;
             h3{
                 width:40%;
                 margin: auto;
@@ -370,6 +369,29 @@ $color : #E8952F;
                 }
             }
             
+        }
+    }
+    .logoBottom{
+        width:65%;
+        margin: auto;
+        border-top: 1px solid #6a6969;
+        .contentBot{
+            display:grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            p{
+                margin: auto 0;
+                font-size: 20px;
+                font-weight: 600;
+                color: rgb(89, 89, 89);
+            }
+            img{
+                width:100%;
+                filter: grayscale(100%);
+                &:hover{
+                    filter: grayscale(0);
+                }
+            }
+
         }
     }
 } 

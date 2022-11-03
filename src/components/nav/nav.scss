@@ -4,26 +4,29 @@
     width:100%;
     position: fixed !important;
     top:0;
-    z-index: 10;
+    z-index: 100;
     .logoBlack{
         display: none; 
     }
     .container{
-        
+        display: inline-flex;
+        width:66.7%;
+        margin: 0 auto;
+        justify-content:space-around;
         .collapse{
-            margin-left: 15%;
+            margin-left: 10%;
             
         }
         .nav-link{
             color:white;
             font-weight: 700;
             &:hover{
-                color:black;
+                border-bottom: 3px solid;
             }
         }
         .navbar-right{
-            display: flex;
-            margin-left: 25%;
+            // display: flex;
+            // margin-left: 25%;
             .fa-solid{
                 cursor: pointer;
                 margin: auto;

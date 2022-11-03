@@ -3,11 +3,10 @@ import Slider from "react-slick";
 import { Link } from 'react-router-dom';
 import ParticlesStar from '../../components/ParticlesStar';
 import Nav from '../../components/nav/Nav'
-import Formbooking from '../../components/form search booking/Formbooking'
-
+import FormBooking from '../../components/form search booking/Formbooking';
+import Footer from '../../components/footer/Footer'
 // SCSS
 import './home.scss'
-import FormBooking from '../../components/form search booking/Formbooking';
 
 // images
 import img1a from '../../assets/images/home/populations/1a.webp'
@@ -26,7 +25,23 @@ import awards2 from '../../assets/images/Awards/001.webp'
 import awards3 from '../../assets/images/Awards/002.webp'
 import awards4 from '../../assets/images/Awards/003.webp'
 import awards5 from '../../assets/images/Awards/004.webp'
-
+// logo Bottom -- Hotel
+import Hotel1 from '../../assets/images/Awards/hotel001.webp'
+import Hotel2 from '../../assets/images/Awards/hotel002.webp'
+import Hotel3 from '../../assets/images/Awards/hotel003.webp'
+import Hotel4 from '../../assets/images/Awards/hotel004.webp'
+import Hotel5 from '../../assets/images/Awards/hotel005.webp'
+import Hotel6 from '../../assets/images/Awards/hotel006.webp'
+// -- Meeting & Even
+import Meeting1 from '../../assets/images/Awards/meeting001.webp'
+import Meeting2 from '../../assets/images/Awards/meeting002.webp'
+import Meeting3 from '../../assets/images/Awards/meeting003.webp'
+// -- entertainment
+import Entertainment1 from '../../assets/images/Awards/entertainment001.svg'
+import Entertainment2 from '../../assets/images/Awards/entertainment002.svg'
+import Entertainment3 from '../../assets/images/Awards/entertainment003.svg'
+import Entertainment4 from '../../assets/images/Awards/entertainment004.svg'
+import Entertainment5 from '../../assets/images/Awards/entertainment005.svg'
 
 function Home() {
     let settings = {
@@ -252,8 +267,33 @@ function Home() {
                         <img src={awards5}></img>
                     </div>
                 </div> 
-                
             </div>
+            <div className='logoBottom'>
+                <div className='hotel contentBot mt-5'>
+                    <p>KHÁCH SẠN & NGHỈ DƯỠNG</p>
+                    <Link to='#'><img src={Hotel1}></img></Link>
+                    <Link to='#'><img src={Hotel2}></img></Link>
+                    <Link to='#'><img src={Hotel3}></img></Link>
+                    <Link to='#'><img src={Hotel4}></img></Link>
+                    <Link to='#'><img src={Hotel5}></img></Link>
+                    <Link to='#'><img src={Hotel6}></img></Link>  
+                </div>
+                <div className='Meeting contentBot'>
+                    <p>HỘI HỌP & SỰ KIỆN</p>
+                    <Link to='#'><img src={Meeting1}></img></Link>
+                    <Link to='#'><img src={Meeting2}></img></Link>
+                    <Link to='#'><img src={Meeting3}></img></Link>
+                </div>
+                <div className='entertainment contentBot'>
+                    <p>VUI CHƠI & GIẢI TRÍ</p>
+                    <Link to='#'><img src={Entertainment1}></img></Link>
+                    <Link to='#'><img src={Entertainment2}></img></Link>
+                    <Link to='#'><img src={Entertainment3}></img></Link>
+                    <Link to='#'><img src={Entertainment4}></img></Link>
+                    <Link to='#'><img src={Entertainment5}></img></Link>  
+                </div>
+            </div>
+            <Footer></Footer>
         </div>
     </>
   )

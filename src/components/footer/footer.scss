@@ -1,0 +1,74 @@
+@import '../../styles/variable.scss';
+
+.footer{
+    background-color: #151b40;
+    height:60vh;
+    color:white;
+    a{
+        color:white;
+        display: block;
+        line-height: 33px;
+        &:hover{
+            color:white;
+        }
+    }
+    .footerTop{
+        width:65%;
+        h3{
+            margin: auto 0;
+            color:$color;
+            margin-right: 30px;
+        }
+        input{
+            height:50px;
+            width:350px;
+        }
+        button{
+            background-color: $color;
+            font-weight: 700;
+            color:white;
+            width: 120px;
+            height:49.3px;
+            margin: auto 0;
+        }
+    }
+    .contentTop{
+        
+        width:60%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        div:not(:first-child){
+            margin-top: 65px;
+        }
+        .contentTop1{
+            display: block;
+            img:nth-child(1){
+                margin-left: 25px;
+            }
+            i{
+                color:$color;
+                margin-right: 10px;
+            }
+            .text{
+                display: block;
+                color: rgb(144, 143, 143);
+                p:nth-child(1){
+                    text-indent: 2px;
+                    line-height: 12px;
+                }
+                p:not(:first-child){
+                    text-indent: 26px;
+                    line-height: 12px;
+                }
+            }
+            a{
+                color:$color ;
+                line-height: 0px;
+            }
+            img{
+                margin-top: 10px;
+                width:135px;
+            }
+        }
+    }
+}
