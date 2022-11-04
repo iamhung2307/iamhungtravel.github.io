@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Slider from "react-slick";
 import { Link } from 'react-router-dom';
 import ParticlesStar from '../../components/ParticlesStar';
@@ -44,6 +44,11 @@ import Entertainment4 from '../../assets/images/Awards/entertainment004.svg'
 import Entertainment5 from '../../assets/images/Awards/entertainment005.svg'
 
 function Home() {
+    // const [screenWidth,setScreenWidth] = useState(screen.width)
+    // console.log(screenWidth)
+    // useEffect(()=>{
+    //     setScreenWidth(screenWidth)
+    // },[screenWidth])
     let settings = {
         dots: false,
         infinite: true,
@@ -52,8 +57,6 @@ function Home() {
         slidesToScroll: 1,
         autoplay:true,
         autoplaySpeed:5000,
-        // fade: true,
-	    // fadeSpeed: 1000
     }
     let sliderTravel = {
         ...settings,
@@ -191,7 +194,7 @@ function Home() {
                                 <p>Hưởng trọn vẻ đẹp của thiên nhiên hoang sơ trải rộng trên diện tích hơn 1.000 ha phía Bắc đảo ngọc, Phú Quốc United Center mở ra cánh cửa đến với Vũ trụ nghỉ dưỡng, vui chơi giải trí bất tận.</p>
                                 <Link to='#'>Khám phá ngay <i class="fa-solid fa-arrow-right"></i></Link>
                             </div>
-                            <div className='img'>
+                            <div className='img imgNone'>
                                 <img src={img1b}></img>
                             </div>
                         </section>
@@ -257,8 +260,8 @@ function Home() {
                 
             </div>
             <div className='awards'>
-                <div className='content'>
-                    <h3>Giải thưởng & thành tựu</h3>
+                <div className='content flex mga'>
+                    <p>Giải thưởng & thành tựu</p>
                     <div>
                         <img src={awards1}></img>
                         <img src={awards2}></img>
@@ -271,26 +274,32 @@ function Home() {
             <div className='logoBottom'>
                 <div className='hotel contentBot mt-5'>
                     <p>KHÁCH SẠN & NGHỈ DƯỠNG</p>
-                    <Link to='#'><img src={Hotel1}></img></Link>
-                    <Link to='#'><img src={Hotel2}></img></Link>
-                    <Link to='#'><img src={Hotel3}></img></Link>
-                    <Link to='#'><img src={Hotel4}></img></Link>
-                    <Link to='#'><img src={Hotel5}></img></Link>
-                    <Link to='#'><img src={Hotel6}></img></Link>  
+                    <div className='img'>
+                        <Link to='#'><img src={Hotel1}></img></Link>
+                        <Link to='#'><img src={Hotel2}></img></Link>
+                        <Link to='#'><img src={Hotel3}></img></Link>
+                        <Link to='#'><img src={Hotel4}></img></Link>
+                        <Link to='#'><img src={Hotel5}></img></Link>
+                        <Link to='#'><img src={Hotel6}></img></Link>
+                    </div>  
                 </div>
                 <div className='Meeting contentBot'>
                     <p>HỘI HỌP & SỰ KIỆN</p>
-                    <Link to='#'><img src={Meeting1}></img></Link>
-                    <Link to='#'><img src={Meeting2}></img></Link>
-                    <Link to='#'><img src={Meeting3}></img></Link>
+                    <div className='img'>
+                        <Link to='#'><img src={Meeting1}></img></Link>
+                        <Link to='#'><img src={Meeting2}></img></Link>
+                        <Link to='#'><img src={Meeting3}></img></Link>
+                    </div>
                 </div>
                 <div className='entertainment contentBot'>
                     <p>VUI CHƠI & GIẢI TRÍ</p>
-                    <Link to='#'><img src={Entertainment1}></img></Link>
-                    <Link to='#'><img src={Entertainment2}></img></Link>
-                    <Link to='#'><img src={Entertainment3}></img></Link>
-                    <Link to='#'><img src={Entertainment4}></img></Link>
-                    <Link to='#'><img src={Entertainment5}></img></Link>  
+                    <div className='img'>
+                        <Link to='#'><img src={Entertainment1}></img></Link>
+                        <Link to='#'><img src={Entertainment2}></img></Link>
+                        <Link to='#'><img src={Entertainment3}></img></Link>
+                        <Link to='#'><img src={Entertainment4}></img></Link>
+                        <Link to='#'><img src={Entertainment5}></img></Link>  
+                    </div>
                 </div>
             </div>
             <Footer></Footer>

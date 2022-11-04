@@ -11,12 +11,15 @@ import contentTop from '../../assets/images/footer/imgContentTop.png'
 function Footer() {
   return (
     <div className='footer pt-5'>
-        <div className='footerTop flex mga'>
+        <div className='footerTop flex mga flexWrap'>
             <h3>ĐĂNG KÝ NHẬN THÔNG TIN</h3>
-            <input placeholder='Nhập email của quý khách'></input>
-            <button>GỬI</button>
+            <div className='mt-2'>
+                <input placeholder='Nhập email của quý khách'></input>
+                <button>GỬI</button>
+            </div>
         </div>
-        <div className='contentTop mga mt-5'>
+        <div className='content mga'>
+        <div className='contentTop mt-5 flex flexWrap'>
             <div className='contentTop1'>
                 <img src={logo}></img>
                 <span className='text'>
@@ -31,7 +34,6 @@ function Footer() {
             </div>
             <div className='contentTop2'>
                 <h5>GIỚI THIỆU</h5>
-                <span className='line'></span>
                 <Link to='#'>Về chúng tôi</Link>
                 <Link to='#'>Thành tựu</Link>
                 <Link to='#'>Liên hệ</Link>
@@ -41,16 +43,13 @@ function Footer() {
             </div>
             <div className='contentTop3 '>
                 <h5>TIN TỨC & SỰ KIỆN</h5>
-                <span className='line'></span>
                 <Link to='#'>Tin công ty</Link>
                 <Link to='#'>Cẩm nang du lịch</Link>
                 <br></br>
                 <Link to='#'><h5>THƯ VIỆN ẢNH</h5></Link>
-                <span className='line'></span>
             </div>
             <div className='contentTop4'>
                 <h5>ĐIỀU KHOẢN & QUY ĐỊNH</h5>
-                <span className='line'></span>
                 <Link to='#'>Điều khoản chung</Link>
                 <Link to='#'>Quy định chung</Link>
                 <Link to='#'>Quy định về thanh toán</Link>
@@ -59,6 +58,29 @@ function Footer() {
                 <Link to='#'>Chính sách giải quyết tranh chấp</Link>
                 <Link to='#'>Chính sách quyền riêng tư</Link>
             </div>
+        </div>
+        <div className='contentMid flex mt-3 '>
+            <Link to='#'><i class="fa-brands fa-facebook-f"></i></Link>
+            <Link to='#'><i class="fa-brands fa-youtube"></i></Link>
+            <Link to='#'><i class="fa-brands fa-instagram"></i></Link>
+        </div>
+        <div className='contentBot mt-3'>
+            <div>
+                <p><b>Số ĐKKD:</b></p>
+                <p>4200456848. ĐK lần đầu 26/7/2006.<br /> ĐK thay đổi lần thứ 50: 3/3/2020</p>
+            </div>
+            <div>
+                <p><b>Nơi cấp:</b></p>
+                <p>Sở kế hoạch và đầu tư tỉnh Khánh Hòa</p>
+                <p><b>Lĩnh vực kinh doanh:</b></p>
+                <p>Khách sạn, biệt thự hoặc căn hộ kinh doanh dịch vụ lưu trú ngắn ngày; khu du lịch sinh thái</p>
+            </div>
+            <div>
+                <p><b>Chủ tài khoản:</b></p>
+                <p>Công ty cổ phần Vinpearl<br /> Tài khoản ngân hàng số: 9124412488166 (VND)</p>
+                <p>Ngân hàng thương mại cổ phần Kỹ Thương Việt Nam (Techcombank) – Hội sở</p>
+            </div>
+        </div>
         </div>
     </div>
   )

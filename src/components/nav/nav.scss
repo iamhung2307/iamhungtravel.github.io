@@ -9,13 +9,15 @@
         display: none; 
     }
     .container{
+        max-width: 100%;
         display: inline-flex;
         width:66.7%;
         margin: 0 auto;
         justify-content:space-around;
         .collapse{
             margin-left: 10%;
-            
+            display: flex;
+            justify-content: space-between;
         }
         .nav-link{
             color:white;
@@ -25,14 +27,15 @@
             }
         }
         .navbar-right{
-            // display: flex;
-            // margin-left: 25%;
+            
             .fa-solid{
                 cursor: pointer;
                 margin: auto;
+                color: white;
             }
             .btn-login{
-                margin:auto 10px;
+                margin:auto;
+                margin-left: 10px;
                 padding:5px 10px;
                 border-radius: 7px;
                 font-weight: 500;
@@ -60,6 +63,11 @@
         .btn-login{
             background-color: #E8952F !important;
             color:white
+        }
+        .navbar-right{
+            .fa-solid{
+                color: black;
+            }
         }
     }
 }

@@ -55,12 +55,12 @@ export default function Nav() {
               <Link class="nav-link" to="pearl-club">Pearl Club</Link>
             </li>  
           </ul>
-          
-        </div>
-        <div className='navbar-right'>
+          <div className='navbar-right'>
             <i class="fa-solid fa-magnifying-glass"></i>
             <button className='btn-login'>Đăng nhập</button>
           </div>
+        </div>
+        
       </div>
     </nav>
   )
