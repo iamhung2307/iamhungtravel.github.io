@@ -1,24 +1,58 @@
 @import './variable.scss';
 @media (max-width:1600px){
     .navbar{
-        .container{
+        .container-fluid{
             width:83% !important;
         }
     }
     .home{
         .main{
             width:80%;
-            
+        }
+    }
+    
+}
+@media (max-width:1220px){
+    .home{
+        .main{
+            .populations{
+                .content{
+                    section{
+                        
+                        .imgNone{
+                            display: none;
+                        }
+                        .img{
+                            width:60%;
+                            img{
+                                width: 100%;
+                                // height:350px;
+                                // height:100%;
+                            }
+                        }
+                        &:nth-child(1){
+                            .img{
+                                width:60%;
+                            }
+                        }
+                        .text{
+                            width:40%;
+                            // height:350px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
-@media (max-width:1200px){
-    
-}
 @media (max-width:1024px){
     .navbar{
-        .container{
+        .container-fluid{
             width:95% !important;
+            .collapse,
+            .navbar-right{
+                margin-left: 5px;
+            }
         }
     }
     .home{
@@ -27,23 +61,20 @@
             .populations{
                 .content{
                     section{
-                        margin-bottom: 5px;
-                        
-                        .imgNone{
-                            display: none;
-                        }
                         .img{
                             width:100%;
-                            height: auto;
                             img{
-                                
                                 width: 100%;
+                            }
+                        }
+                        &:nth-child(1){
+                            .img{
+                                width:100%;
                             }
                         }
                         .text{
                             width:100%;
                         }
-                        
                     }
                 }
             }
@@ -113,3 +144,4 @@
         }
     }
 }
+

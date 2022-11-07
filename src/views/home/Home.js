@@ -44,11 +44,6 @@ import Entertainment4 from '../../assets/images/Awards/entertainment004.svg'
 import Entertainment5 from '../../assets/images/Awards/entertainment005.svg'
 
 function Home() {
-    // const [screenWidth,setScreenWidth] = useState(screen.width)
-    // console.log(screenWidth)
-    // useEffect(()=>{
-    //     setScreenWidth(screenWidth)
-    // },[screenWidth])
     let settings = {
         dots: false,
         infinite: true,
@@ -56,21 +51,64 @@ function Home() {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay:true,
-        autoplaySpeed:5000,
+        autoplaySpeed:5000,   
     }
+
     let sliderTravel = {
         ...settings,
         dots:true,
         slidesToShow: 5,
         slidesToScroll: 2,
-        autoplaySpeed:3000
+        autoplaySpeed:3000,
+        responsive: [
+            {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 4
+            }
+            },
+            {
+            breakpoint: 900,
+            settings: {
+                slidesToShow: 3
+            }
+            },
+            {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+            }} 
+        ]
     }
     let discount = {
         ...sliderTravel,
         slidesToShow: 3,
         slidesToScroll: 3,
         speed: 1800,
-        autoplaySpeed:5000
+        autoplaySpeed:5000,
+        responsive: [
+            {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 2
+            }
+            },
+            {
+            breakpoint: 700,
+            settings: {
+                slidesToShow: 1
+            }
+            }
+        ]
     }
   return (
     <>
@@ -132,9 +170,6 @@ function Home() {
                             <div className='slideChild slide10'></div>
                             <p>VỊNH HẠ LONG</p>
                             </div>
-                        
-                        {/* <div className='slideChild slide11'></div>
-                        <div className='slideChild slide12'></div> */}
                     </Slider>
                     </div>
                     </div>

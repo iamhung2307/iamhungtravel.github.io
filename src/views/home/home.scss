@@ -1,6 +1,7 @@
 @import '../../styles/variable.scss';
 
 .home{
+    
     $boxShadow: 1px 2px 5px 0px rgb(107, 105, 105);
     
     .slick-dots {
@@ -165,14 +166,17 @@
             
         }
         .Ecosystem{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
             // color:white;
             .EcosystemChild{
+                
                 position: relative;
+                width:237px;
                 height:160px;
                 margin:0 5px;
                 border-radius: 10px;
@@ -180,6 +184,7 @@
                 font-weight: 600;
                 font-size: 20px;
                 overflow: hidden;
+                margin-top: 10px;
                 &:hover .img{
                     img{transform: scale(1.25);}
                     
@@ -223,12 +228,18 @@
                     a{
                         color:white;
                     }
+                    &:nth-child(1){
+                        .img{
+                            width:33%;
+                        }
+                    }
                     .img{
-                        width:836px;
+                        width:66%;
                         height:400px;
                         overflow: hidden;
                         img{
                             width:100%;
+                            height:400px;
                             transform: scale(1.1);
                             transition: .5s ease-in-out;
                             &:hover{
@@ -242,6 +253,7 @@
                         flex-wrap: wrap-reverse;
                     }
                     .text{
+                        width: 34%;
                         height:400px;
                         font-family: 'Montserrat', sans-serif;
                         h1{
@@ -249,8 +261,7 @@
                             font-size: 65px;
                         }
                         background-color: $color;
-                        width:400px;
-                        padding:65px 60px 0 50px;
+                        padding:70px 60px 6px 50px;
                         text-align: left;
                         transition:background-color 1s ;
                         &:hover{

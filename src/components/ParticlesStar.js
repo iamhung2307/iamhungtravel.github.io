@@ -5,7 +5,7 @@ import { loadFull } from "tsparticles";
 
 function ParticlesStar() {
     let T=28,HS=11,a=T/HS
-    console.log(Math.floor(a),T%HS)
+    // console.log(Math.floor(a),T%HS)
         // console.log(a.toFixed(),T%HS)
 
     const particlesInit = useCallback(async (engine) => {

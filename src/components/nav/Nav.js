@@ -7,8 +7,7 @@ import './nav.scss'
 import imgLogo from '../../assets/images/index/logo.svg'
 import logoBlack from '../../assets/images/index/logo.png'
 export default function Nav() {
-  // let [scroll,setscroll] = useState(false)
-  
+ 
   useEffect(()=>{
     const handleScroll = () =>{
       const nav = document.querySelector('.navbar')
@@ -30,7 +29,6 @@ export default function Nav() {
     }
   },[])
   return (
-    // <></>
     <nav class="navbar navbar-expand-sm">
       <div class="container">
         <Link class="navbar-brand" to="/">
@@ -40,6 +38,7 @@ export default function Nav() {
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
+        {/* <i class="fa-solid fa-bars"></i> */}
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -55,13 +54,14 @@ export default function Nav() {
               <Link class="nav-link" to="pearl-club">Pearl Club</Link>
             </li>  
           </ul>
-          <div className='navbar-right'>
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <button className='btn-login'>Đăng nhập</button>
-          </div>
+              <div className='navbar-right'>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <button className='btn-login'>Đăng nhập</button>
+              </div>
         </div>
         
       </div>
     </nav>
+    
   )
 }
